@@ -1,6 +1,19 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+.h-scroll {
+  position: relative;
+  height: 300vh;
+  background: transparent;
+}
+
+.h-scroll-1 {
+  position: sticky;
+  top: 0;
+  display: flex;
+  height: auto;
+  align-items: center;
+  overflow: hidden;
+}
+
+.h-scroll-2 {
+  display: flex;
+  gap: 4px;
 }

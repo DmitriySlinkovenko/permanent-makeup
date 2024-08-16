@@ -1,0 +1,94 @@
+.nav__btn {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: 35px;
+}
+
+.nav__btn:hover {
+  color: #00abf0;
+}
+
+.nav__btn_active {
+  color: #00abf0;
+}
+
+.mobile__nav {
+  display: none;
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  width: 30px;
+  height: 28px;
+  background-color: transparent;
+}
+
+.hamline {
+  width: 30px;
+  height: 2px;
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.3s ease;
+}
+
+.hamline:nth-child(1) {
+  width: 20px;
+  top: 25%;
+}
+
+.hamline:nth-child(3) {
+  width: 20px;
+  top: 75%;
+}
+
+.close:nth-child(1) {
+  transform: rotate(-45deg);
+  top: 20%;
+  left: 60%;
+}
+.close:nth-child(2) {
+  transform: rotate(45deg);
+  width: 42px;
+  left: 0;
+}
+.close:nth-child(3) {
+  transform: rotate(-45deg);
+  left: 5%;
+}
+
+.mobile-nav__container {
+  display: none;
+}
+
+.mobile-nav__container_active {
+  display: flex;
+  position: absolute;
+  background-color: white;
+  flex-direction: column;
+  color: black;
+  top: 50%;
+  right: 50px;
+  line-height: 2.5;
+  padding: 0 20px;
+  border-radius: 10px;
+  align-items: center;
+  width: 200px;
+}
+.mobile__link {
+  text-decoration: none;
+  font-size: large;
+}
+
+@media screen and (max-width: 720px) {
+  .mobile__nav {
+    display: flex;
+  }
+
+  .nav__btn {
+    display: none;
+  }
+}
