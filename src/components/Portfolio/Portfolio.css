@@ -1,0 +1,25 @@
+.portfolio {
+  height: 100vh;
+}
+
+.portfolio__container {
+  height: 650px;
+  display: flex;
+  width: 100%;
+  margin: 300px auto 0;
+  justify-content: center;
+  gap: 10px;
+}
+
+.portfolio__image {
+  width: 15%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 2px solid red;
+  transition: all ease-in-out 0.5s;
+}
+
+.portfolio__image:hover {
+  width: 35%;
+}

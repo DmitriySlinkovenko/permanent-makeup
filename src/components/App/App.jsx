@@ -8,6 +8,7 @@ import bg3 from "../../assets/b3.png";
 import bg4 from "../../assets/b4.jpeg";
 import bg5 from "../../assets/b5.jpeg";
 import o1 from "../../assets/o1.png";
+import Portfolio from "../Portfolio/Portfolio";
 
 import "./App.css";
 
@@ -18,7 +19,7 @@ function App() {
       target: targetRef,
     });
 
-    const x = useTransform(scrollYProgress, [0, 1], ["1%", "-80%"]);
+    const x = useTransform(scrollYProgress, [0, 1], ["1%", "-81%"]);
 
     return (
       <section ref={targetRef} className="h-scroll" id="about">
@@ -86,6 +87,7 @@ function App() {
       <Header />
       <Main />
       <HorizontalScrollCarousel />
+      <Portfolio />
     </>
   );
 }
